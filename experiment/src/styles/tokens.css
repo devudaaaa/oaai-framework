@@ -1,0 +1,115 @@
+/* Design tokens and base layer. Ported from the v2 visual identity.
+   No em dashes anywhere. */
+
+:root {
+  --c: #0a0a0a; /* base background */
+  --c2: #131613; /* card surface */
+  --c3: #1a1f1a; /* raised surface */
+  --g: #a0f1bd; /* mint accent */
+  --pg: #2e4f21; /* primary dark green (devudaaaa) */
+  --pgh: #3c6a2c; /* primary dark green, hover */
+  --gd: #0c1f12; /* dark text on mint */
+  --gs: #d2f8dc; /* soft green */
+  --w: #ffffff;
+  --m: #9a9ea3; /* muted text */
+  --h: rgba(160, 241, 189, 0.12); /* hairline */
+  --h2: rgba(255, 255, 255, 0.06);
+  --r: #f8a5a5; /* red, accountability */
+  --rs: rgba(248, 165, 165, 0.08);
+  --b: #5dade2; /* blue, ownership */
+  --bs: rgba(93, 173, 226, 0.1);
+  --p: #c08ad6; /* purple, Sam */
+  --ps: rgba(192, 138, 214, 0.14);
+  --amber: #ffc23c;
+  --pill: 9999px;
+  --card: 12px;
+  --wrap: 760px;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: 'Work Sans', system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.65;
+  background: var(--c);
+  color: var(--w);
+  overflow-x: hidden;
+}
+
+button {
+  font-family: inherit;
+}
+
+/* Typography utilities */
+.display {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 600;
+  font-size: clamp(34px, 5.2vw, 60px);
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+}
+.subhead {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 300;
+  font-size: clamp(23px, 3vw, 36px);
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+}
+.eyebrow {
+  font-family: 'Space Mono', monospace;
+  font-weight: 400;
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+.mono {
+  font-family: 'Space Mono', monospace;
+  font-size: 13px;
+  letter-spacing: 0.02em;
+}
+.body-text {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.86);
+}
+.muted {
+  color: var(--m);
+}
+.serif-q {
+  font-family: 'Work Sans', sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  color: var(--g);
+}
+
+.wrap {
+  max-width: var(--wrap);
+  margin: 0 auto;
+  padding: 0 clamp(20px, 5vw, 48px);
+  width: 100%;
+}
+
+.fade-in {
+  animation: fadeIn 0.45s ease forwards;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

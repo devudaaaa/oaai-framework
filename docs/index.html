@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OAAI Framework — Take the Experiment</title>
+    <title>OAAI Framework: Take the Experiment</title>
     <meta name="description" content="Do you claim more credit than blame when using AI? Take the experiment. 4 scenarios. 3 minutes. Science happens.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -150,7 +150,7 @@
     <p class="subtitle">16 arguments from court rulings, legal scholarship, and philosophy. 14 attack relations. Computed extensions. Here's the full map.</p>
 
     <h2>Ownership arguments</h2>
-    <p>Seven arguments about who owns AI output — and why.</p>
+    <p>Seven arguments about who owns AI output, and why.</p>
     <div class="arg-grid" id="ownership-args"></div>
 
     <h2>Accountability arguments</h2>
@@ -190,17 +190,17 @@
 
     <p>A court in Beijing says prompting AI 150 times earns you copyright. A US examiner says 624 times doesn't. The EU regulates who's responsible when AI causes harm but defers to separate law for who owns the good stuff. Patent offices have reversed their guidance twice in two years.</p>
 
-    <p>Every one of these institutions treats ownership and accountability as separate problems. We used Dung's Abstract Argumentation Frameworks — the mathematics of rational disagreement — to prove they can't be separated. The threshold must be the same.</p>
+    <p>Every one of these institutions treats ownership and accountability as separate problems. We used Dung's Abstract Argumentation Frameworks, the mathematics of rational disagreement, to prove they can't be separated. The threshold must be the same.</p>
 
     <p>The formal analysis tells us what's logically true. This experiment tells us what humans actually do. Together, they measure the gap between what we should do and what we actually do when the stakes are real and the outcome is uncertain.</p>
 
     <h2>The research</h2>
     <p>The <strong>Ownership-Accountability Asymmetry Index (OAAI)</strong> measures how much more ownership people claim versus accountability they accept for the same level of AI involvement. An OAAI of 0 means perfect consistency. Anything above 0 means humans are doing exactly what the formal framework says is logically incoherent.</p>
 
-    <p>We haven't fabricated results. We're collecting them — one participant at a time. Every response submitted through this site contributes to the dataset.</p>
+    <p>We haven't fabricated results. We're collecting them, one participant at a time. Every response submitted through this site contributes to the dataset.</p>
 
     <h2>Who we are</h2>
-    <p><a href="https://devudaaaa.xyz" style="color: var(--primary); font-weight: 500;">Devudaaa Research Lab</a> studies the moment a person shifts from calculation to conviction — when the algorithm says one thing and your gut says another. The ownership-accountability paradox is one piece of that larger question.</p>
+    <p><a href="https://devudaaaa.xyz" style="color: var(--primary); font-weight: 500;">Devudaaa Research Lab</a> studies the moment a person shifts from calculation to conviction, when the algorithm says one thing and your gut says another. The ownership-accountability paradox is one piece of that larger question.</p>
 
     <div style="margin-top: 32px;">
         <a href="mailto:research@leed.guru?subject=OAAI Research Collaboration" class="cta-big">Get involved →</a>
@@ -367,10 +367,10 @@ function showResults() {
     });
 
     const oaai = gaps.reduce((a,b) => a+b, 0) / gaps.length;
-    const interp = oaai > 1.5 ? "Strong asymmetry — you claim significantly more ownership than you accept accountability. You're not alone. This is exactly what every current governance framework does too."
+    const interp = oaai > 1.5 ? "Strong asymmetry, you claim significantly more ownership than you accept accountability. You're not alone. This is exactly what every current governance framework does too."
         : oaai > 0.5 ? "Moderate asymmetry detected. You lean toward claiming more credit than blame, but not dramatically."
         : oaai > -0.5 ? "Near-zero asymmetry. You're remarkably consistent in how you attribute AI-assisted outcomes. More consistent than most legal systems, in fact."
-        : "Reverse asymmetry — you accept more blame than credit. That's unusual and worth examining.";
+        : "Reverse asymmetry, you accept more blame than credit. That's unusual and worth examining.";
 
     el.innerHTML = `<div class="result-card fade-in">
         <div class="oaai-label">Your Ownership-Accountability Asymmetry Index</div>
@@ -426,7 +426,7 @@ function renderFramework() {
     });
 
     document.getElementById('attacks-list').innerHTML = ATTACKS.map(([a,t,r]) =>
-        `<div class="attack-item"><code>${a}</code> attacks <code>${t}</code> — ${r}</div>`
+        `<div class="attack-item"><code>${a}</code> attacks <code>${t}</code>, ${r}</div>`
     ).join('');
 
     document.getElementById('grounded-principles').innerHTML = GROUNDED.map(id => {

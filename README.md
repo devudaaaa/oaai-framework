@@ -6,7 +6,7 @@ This is a research toolkit that formalizes that contradiction using argumentatio
 
 We call the gap between what people claim to own and what people accept accountability for the **OAAI — Ownership-Accountability Asymmetry Index**.
 
-> **Try it live:** [leeladitya.github.io/oaai-framework](https://leeladitya.github.io/oaai-framework) — take the experiment, explore the framework, see the math.
+> **Try it live:** [devudaaaa.github.io/oaai-framework/experiment](https://devudaaaa.github.io/oaai-framework/experiment/) — take the experiment, explore the framework, see the math.
 
 ---
 
@@ -115,7 +115,7 @@ The separability argument (`c3`) — the idea that you can own AI output without
 
 ### Try it online first
 
-Go to [leeladitya.github.io/oaai-framework](https://leeladitya.github.io/oaai-framework). No installation. Take the experiment. See the argumentation graph. Get your OAAI score.
+Go to [devudaaaa.github.io/oaai-framework/experiment](https://devudaaaa.github.io/oaai-framework/experiment/). No installation. Take the experiment. See the argumentation graph. Get your OAAI score.
 
 ### Run it locally
 
@@ -123,7 +123,7 @@ You need [Node.js](https://nodejs.org) (version 16 or newer).
 
 ```bash
 # Clone the repository
-git clone https://github.com/leeladitya/oaai-framework.git
+git clone https://github.com/devudaaaa/oaai-framework.git
 cd oaai-framework
 
 # Install dependencies
@@ -296,7 +296,7 @@ This isn't an opinion. It's a computed result from an argumentation framework wi
 
 We need three things:
 
-1. **Experiment participants** — Take the experiment at [leeladitya.github.io/oaai-framework](https://leeladitya.github.io/oaai-framework). Your anonymized data helps us measure whether the asymmetry exists in human behavior, not just in logic.
+1. **Experiment participants** — Take the experiment at [devudaaaa.github.io/oaai-framework/experiment](https://devudaaaa.github.io/oaai-framework/experiment/). Your anonymized data helps us measure whether the asymmetry exists in human behavior, not just in logic.
 
 2. **New arguments** — The framework currently has 16. The real debate has hundreds. If you can articulate a sourced argument and its attack relations, submit a PR.
 
